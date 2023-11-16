@@ -1,0 +1,40 @@
+live_config_reload: true
+
+window:
+  opacity: 1.0
+  padding:
+    x: 6
+    y: 4
+  dynamic_padding: false
+  decorations: none
+
+font:
+  normal:
+    family: "SFMono Nerd Font"
+    style: Regular
+  size: 14
+colors:
+  primary:
+   background: '#222222'
+   foreground: '#F9F9F9'
+  normal:
+    black:   '#3f3f3f'
+    red:     '#cc0000'
+    green:   '#4e9a06'
+    yellow:  '#c4a000'
+    blue:    '#94bff3'
+    magenta: '#85678f'
+    cyan:    '#06989a'
+    white:   '#dcdccc'
+  bright:
+    black:   '#545454'
+    red:     '#fc5454'
+    green:   '#8ae234'
+    yellow:  '#fce94f'
+    blue:    '#94bff3'
+    magenta: '#b294bb'
+    cyan:    '#93e0e3'
+    white:   '#ffffff'
+  cursor:
+    style:
+      shpe: Beam
