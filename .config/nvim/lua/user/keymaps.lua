@@ -12,7 +12,9 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 keymap("n", "<leader>so", ":source % <CR>", opts)
-keymap("n", "<leader>c", ":bd <CR>", opts)
+keymap("n", "<leader>c", ":bd <cr>", opts)
+keymap("n", "<leader>e", ":Ex <cr>", opts)
+
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -20,7 +22,7 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)

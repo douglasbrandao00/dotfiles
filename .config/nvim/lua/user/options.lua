@@ -13,9 +13,9 @@ g.transparency = ui.transparency
 opt.laststatus = 3 -- global statusline
 opt.showmode = false
 
-opt.clipboard = "unnamedplus"
 opt.cursorline = true
-
+opt.clipboard = "unnamedplus"
+--
 -- Indenting
 opt.expandtab = true
 opt.shiftwidth = 2

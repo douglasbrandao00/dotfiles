@@ -5,9 +5,9 @@ local M = {}
 
 local plugin_list = {
  	"nvim-lua/plenary.nvim",
- 	"numToStr/Comment.nvim",
  	"EdenEast/nightfox.nvim",
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+  require("user.plugins.comment"),
 	require("user.plugins.devicons"),
 	require("user.plugins.gitsigns"),
 	require("user.plugins.mason"),
