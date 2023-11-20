@@ -15,6 +15,9 @@ local plugin_list = {
 	require("user.plugins.cmp"),
 	require("user.plugins.treesitter"),
 	require("user.plugins.telescope"),
+  require("user.plugins.dressing"),
+  require("user.plugins.noice"),
+  require("user.plugins.bufferline"),
 }
 
 local function install_lazy_nvim()
