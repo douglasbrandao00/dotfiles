@@ -9,4 +9,8 @@ plug "zsh-users/zsh-syntax-highlighting"
 autoload -Uz compinit
 compinit
 
+alias cls="clear"
+
+. "$HOME/.asdf/asdf.sh"
+
 eval "$(starship init zsh)"

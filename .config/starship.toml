@@ -1,4 +1,10 @@
-fotmat = ''
+format = '(bold green)🚀 $directory'
 [character]
-success_symbol = '[🚀 ](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+
+[git_branch]
+format='[$symbol$branch(:$remote_branch)]($style)'
+style= 'bold purple'
+
+[git_status]
+disabled=true
 
