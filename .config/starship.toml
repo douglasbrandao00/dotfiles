@@ -1,10 +1,35 @@
-format = '(bold green)🚀 $directory'
-[character]
+format = '🚀 $directory $git_branch '
+style = 'bold green'
+add_newline = false
+right_format = '$nodejs'
 
 [git_branch]
-format='[$symbol$branch(:$remote_branch)]($style)'
-style= 'bold purple'
+format='[$symbol$branch]($style)'
+symbol=' '
+style='bold purple'
 
-[git_status]
-disabled=true
-
+[nodejs]
+format = '[  $version](bold green) '
+detect_files=['package.json']
+#
+# [battery]
+# full_symbol = '🔋 '
+# charging_symbol = '⚡️ '
+# discharging_symbol = '💀 '
+#
+# [[battery.display]] # 'bold red' style and discharging_symbol when capacity is between 0% and 10%
+# threshold = 10
+# style = 'bold red'
+#
+# [[battery.display]] # 'bold yellow' style and 💦 symbol when capacity is between 10% and 30%
+# threshold = 30
+# style = 'bold yellow'
+# discharging_symbol = '💦'
+#
+# [[battery.display]] # 'bold yellow' style and 💦 symbol when capacity is between 10% and 30%
+# threshold = 100
+# style = 'bold green'
+# discharging_symbol = '🔋'
+#
+#
+#

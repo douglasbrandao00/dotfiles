@@ -18,6 +18,7 @@ local plugin_list = {
   require("user.plugins.dressing"),
   require("user.plugins.noice"),
   require("user.plugins.bufferline"),
+  require("user.plugins.neo-tree"),
 }
 
 local function install_lazy_nvim()

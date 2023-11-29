@@ -13,7 +13,7 @@ vim.g.maplocalleader = " "
 -- Normal --
 keymap("n", "<leader>so", ":source % <CR>", opts)
 keymap("n", "<leader>c", ":bd <cr>", opts)
-keymap("n", "<leader>e", ":Ex <cr>", opts)
+keymap("n", "<leader>e", ":Neotree float <cr>", opts)
 
 
 -- Better window navigation

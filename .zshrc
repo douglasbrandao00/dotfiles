@@ -10,7 +10,7 @@ autoload -Uz compinit
 compinit
 
 alias cls="clear"
+alias t="~/.config/tmux/tmux-session-manager"  
 
 . "$HOME/.asdf/asdf.sh"
-
 eval "$(starship init zsh)"
