@@ -27,6 +27,7 @@ opt.fillchars = { eob = " " }
 opt.ignorecase = true
 opt.smartcase = true
 opt.mouse = "a"
+opt.wrap = false
 
 -- Numbers
 opt.number = true
@@ -34,6 +35,7 @@ opt.numberwidth = 2
 opt.relativenumber = true
 opt.ruler = false
 
+opt.sidescrolloff = 8
 -- disable nvim intro
 opt.shortmess:append "sI"
 
