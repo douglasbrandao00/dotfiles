@@ -10,6 +10,7 @@ autoload -Uz compinit
 compinit
 
 alias cls="clear"
+alias lah="ls -lah"
 alias tsm="~/.config/tmux/tmux-session-manager"  
 
 . "$HOME/.asdf/asdf.sh"
