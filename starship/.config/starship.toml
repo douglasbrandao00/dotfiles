@@ -1,0 +1,12 @@
+format = '🚀 $directory $git_branch '
+add_newline = false
+right_format = '$nodejs'
+
+[git_branch]
+format='[$symbol$branch]($style)'
+symbol=' '
+style='bold purple'
+
+[nodejs]
+format = '[  $version](bold green) '
+detect_files=['package.json']
