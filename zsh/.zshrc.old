@@ -5,19 +5,16 @@ plug "zap-zsh/supercharge"
 plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
 
-alias cc="clear"
-alias tm="bun ~/.config/tm.js"
-alias ll="exa -lha"
-
-
-. "$HOME/.asdf/asdf.sh"
-# append completions to fpath
-fpath=(${ASDF_DIR}/completions $fpath)
-
-. "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
-
-. ~/.asdf/plugins/java/set-java-home.zsh
+export PATH=$PATH:/opt/gradle/gradle-8.8/bin
 
 # Load and initialise completion system
 autoload -Uz compinit
 compinit
+
+alias cls="clear"
+alias lah="ls -lah"
+alias tsm="~/.config/tmux/tmux-session-manager"  
+
+
+. "$HOME/.asdf/asdf.sh"
+eval "$(starship init zsh)"

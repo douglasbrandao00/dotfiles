@@ -37,7 +37,8 @@ return {
         'jsonls',
         'marksman',
         'yamlls',
-        'tsserver'
+        'tsserver',
+        'gopls'
       }
     })
 

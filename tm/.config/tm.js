@@ -1,5 +1,6 @@
 import { $ } from "bun";
 
+
 const tmuxOutput= await $`echo $TMUX`.quiet().text()
 const inTmux = tmuxOutput.replace(/(\r\n|\n|\r)/gm, "").length > 0
 const projects = await $`ls ~/www`.quiet().text()
@@ -11,9 +12,12 @@ try {
 }
 
 const parcedOpenProjects = openProjects.split("\n").filter(p => p.length > 0)
-const chosenProject = await $`echo "${projects}" |fzf --layout=reverse-list --border=double`.quiet().text()
+
+const chosenProject = await $`echo "${projects}" | fzf --layout=reverse-list`.text()
+
 const parcedChosenProject = chosenProject.replace(/(\r\n|\n|\r)/gm, "");
 const isProjectOpen = parcedOpenProjects.includes(parcedChosenProject)
+
 
 if(!inTmux && isProjectOpen) {
   await $`tmux attach -t ${parcedChosenProject}`
