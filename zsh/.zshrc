@@ -5,11 +5,9 @@ plug "zap-zsh/supercharge"
 plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
 
-
-. "$HOME/.asdf/asdf.sh"
 PATH=$PATH:~/.cargo/bin:~/go/bin
 # append completions to fpath
-fpath=(${ASDF_DIR}/completions $fpath)
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
 . ~/.asdf/plugins/java/set-java-home.zsh
 
 alias cc="clear"
@@ -17,3 +15,5 @@ alias ll="exa -lha"
 # Load and initialise completion system
 autoload -Uz compinit
 compinit
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
